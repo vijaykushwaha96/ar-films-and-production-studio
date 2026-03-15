@@ -282,6 +282,20 @@ h1, h2, h3, h4 {
   padding: 0.6rem 1.5rem;
 }
 
+/* When navbar turns white on scroll, switch CTA to solid primary */
+.navbar.scrolled .nav-cta {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.navbar.scrolled .nav-cta:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
 .menu-toggle {
   display: none;
   flex-direction: column;
